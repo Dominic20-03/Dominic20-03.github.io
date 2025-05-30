@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: underline;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #pic1 {
+            text-align: center;
+        }
+
+        #pic {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-color: rgb(77, 79, 77);
+            border-radius: 800px;
+            border-width: 5px;
+            border-style: solid;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #cng {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        button {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 20px;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: burlywood;
+        }
+
+        #text {
+            text-align: center;
+            font-size: larger;
+            font-weight: lighter;
+        }
+
+        #upper {
+            margin-top: 0px;
+            margin-left: 500px;
+        }
+
+        #clr {
+            background: linear-gradient(to top, #21b8ea 0%, #ffffff 100%);
+        }
+
+        #banner {
+            background-color: bisque;
+            background-image: url(img/gaming.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* margin, padding, border, width, height */
+            /* box model style */
+            margin: 80px;
+            /* margin er left right top bottom o use kora jay */
+            padding: 100px;
+            border-color: rgb(20, 50, 119);
+            border-radius: 0px;
+            border-style: solid;
+            border-width: 5px;
+            /* width: 400px;
+            height: 300px; */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .ban {
+            color: #ffffff;
+            text-decoration: solid;
+            text-align: left;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clr">
+        <h1>Welcome to My Portfolio</h1>
+        <p id="text">I am Towhidul Mowla Chowdhury, an undergraduate CSE student. I'm an aspiring software
+            developer, and I'm truly
+            passionate about AI and problem-solving.</p>
+        <div id="pic1">
+            <img id="pic" src="img/mypic.jpg" alt="nafiz">
+            <p id="cng">My picture</p>
+            <button>Click to see the details</button>
+        </div>
+    </div>
+    <div id="banner">
+        <h1 class="ban">What is Gaming?</h1>
+        <p class="ban">Gaming is now a global pastime, offering everything from intense esports to casual mobile games.
+            It's more than just fun; it builds skills, connects people, and constantly innovates technology.</p>
+        <button>Explore Gaming</button>
+    </div>
+    <button id="upper">Download Resume</button> <br>
+    <a target="_blank" href="https://deadshot.io/">DeadShot</a>
+
+</body>
+
+</html>
