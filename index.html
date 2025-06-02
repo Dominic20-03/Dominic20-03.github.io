@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+        body * {
+            /* color: chocolate;
+            border-style: solid;
+            border-width: 1px;
+            border-color: red; */
+            margin: 1%;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(#ffffff, #EBDC);
+        }
+
         h1 {
             text-align: center;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            text-decoration: underline;
+            /* text-decoration: underline; */
             font-weight: bold;
             text-transform: capitalize;
         }
@@ -26,7 +39,7 @@
             width: 400px;
             height: 400px;
             object-fit: cover;
-            border-color: rgb(77, 79, 77);
+            border-color: darkslateblue;
             border-radius: 800px;
             border-width: 5px;
             border-style: solid;
@@ -65,13 +78,11 @@
             text-align: center;
         }
 
-        #clr {
-            background: linear-gradient(to top, #21b8ea 0%, #ffffff 100%);
-        }
+
 
         #banner {
             background-color: bisque;
-            background-image: url(gaming.jpg);
+            background-image: url(img/gaming.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -95,18 +106,63 @@
             text-align: left;
             font-family: sans-serif;
         }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: bisque;
+            padding-right: 20px;
+            border-radius: 10px;
+        }
+
+        #nav {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        img {
+            width: 60px;
+        }
+
+        #clr {
+            background-color: blueviolet;
+            text-align: center;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        #port {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-70%);
+            padding-top: 20px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <img src="https://img.icons8.com/?size=160&id=109687&format=png" alt="pp">
+        <h3 id="port">Welcome to My Portfolio</h1>
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Resume</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
     <div id="clr">
-        <h1>Welcome to My Portfolio</h1>
         <p id="text">I am Towhidul Mowla Chowdhury, an undergraduate CSE student. I'm an aspiring software
             developer, and I'm truly
             passionate about AI and problem-solving.</p>
         <div id="pic1">
-            <img id="pic" src="mypic.jpg" alt="nafiz">
-            <p id="cng">My picture</p>
+            <img id="pic" src="img/mypic.jpg" alt="nafiz">
+            <p id="cng">NAFIZ</p>
             <button>Click to see the details</button>
         </div>
     </div>
