@@ -16,7 +16,7 @@
 
         body {
             min-height: 100vh;
-            background-image: linear-gradient(#ffffff, #EBDC);
+            background-image: linear-gradient(#CAF4F4, #EBDC);
         }
 
         h1 {
@@ -29,6 +29,7 @@
 
         p {
             font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
         }
 
         #pic1 {
@@ -39,18 +40,14 @@
             width: 400px;
             height: 400px;
             object-fit: cover;
-            border-color: darkslateblue;
+            border-color: #00ccff;
             border-radius: 800px;
-            border-width: 5px;
+            border-width: 2px;
             border-style: solid;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         }
 
-        #cng {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-style: normal;
-        }
+
 
         button {
             padding-left: 20px;
@@ -70,6 +67,7 @@
             text-align: center;
             font-size: larger;
             font-weight: lighter;
+            text-align: center;
         }
 
         #upper {
@@ -81,7 +79,7 @@
 
 
         #banner {
-            background-color: bisque;
+            /* background-color: #c76b98; */
             background-image: url(gaming.jpg);
             background-size: cover;
             background-position: center;
@@ -110,7 +108,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            background-color: bisque;
+            background-color: #d0abe1;
             padding-right: 20px;
             border-radius: 10px;
         }
@@ -127,7 +125,7 @@
         }
 
         #clr {
-            background-color: blueviolet;
+            background-color: #CAEFD1;
             text-align: center;
             border-radius: 10px;
             padding: 30px;
@@ -138,45 +136,114 @@
             left: 50%;
             transform: translateX(-70%);
             padding-top: 20px;
-            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            /* or any color you want */
+            font-weight: bold;
+        }
+
+        #nav a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .cls-btn {
+            background-color: black;
+            color: yellowgreen;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .cls-btn:hover {
+            color: black;
+        }
+
+        .cls-btn a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .cls-btn a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        #lol {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .mail {
+            width: 80px;
+        }
+
+        .game-btn {
+            width: 150px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="https://img.icons8.com/?size=160&id=109687&format=png" alt="pp">
+        <img src="https://img.icons8.com/?size=96&id=UsTDysYP8HMM&format=png" alt="pp">
         <h3 id="port">Welcome to My Portfolio</h1>
-        <ul id="nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Resume</li>
-            <li>Contact</li>
-        </ul>
+            <ul id="nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
     </header>
 
     <div id="clr">
-        <p id="text">I am Towhidul Mowla Chowdhury, an undergraduate CSE student. I'm an aspiring software
-            developer, and I'm truly
-            passionate about AI and problem-solving.</p>
         <div id="pic1">
-            <img id="pic" src="mypic.jpg" alt="nafiz">
-            <p id="cng">NAFIZ</p>
-            <button>Click to see the details</button>
+            <img id="pic" src="https://i.pinimg.com/736x/85/a9/3c/85a93cf1fa8d2696d14db0e98fcd1118.jpg" alt="nafiz">
+            <p id="text">I am Batman.<br>
+
+                By day, I am Bruce Wayne, billionaire and head of Wayne Enterprises. But when night falls, I become
+                something else something the criminals of Gotham fear. I fight in the shadows, using my mind, my
+                strength, and years of training to protect the innocent and bring justice to a broken city.<br>
+
+                I don’t have superpowers. I don’t need them.<br>
+                I am vengeance.<br>
+                I am the knight.<br>
+                I am Batman.</p>
+            <div id="Resume">
+                <button class="cls-btn"><a target="_blank"
+                        href="https://drive.google.com/file/d/1wUb3sUDYeiHogE-u2bZdkIiK1oAVQwu5/view?usp=sharing">Resume</a></button>
+            </div>
         </div>
     </div>
     <div id="banner">
         <h1 class="ban">What is Gaming?</h1>
         <p class="ban">Gaming is now a global pastime, offering everything from intense esports to casual mobile games.
             It's more than just fun; it builds skills, connects people, and constantly innovates technology.</p>
-        <button>Explore Gaming</button>
-    </div>
-    <div id="upper">
-        <button>Download Resume</button> <br>
+        <button class="game-btn"><a target="_blank" href="https://deadshot.io/">Explore Game</a></button>
     </div>
 
-    <a target="_blank" href="https://deadshot.io/">DeadShot</a>
+
+
+    <div id="About">
+        <p id="text">About is Coming Soon....</p>
+    </div>
+
+    <div id="lol">
+        <div id="Home">
+            <a target="_blank" href="https://github.com/Dominic20-03">Home</a>
+        </div>
+
+        <div id="Contact" class="mail">
+            <a target="_blank" href="mailto:towhidulmowlachowdhury@gmail.com">Send Email</a>
+        </div>
+    </div>
+
 
 </body>
 
